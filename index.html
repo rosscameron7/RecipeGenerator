@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarbTrack Recipe Generator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>CarbTrack Recipe Generator <img src="/img/logo.png" alt="CarbTrack Logo" style="width: 70px; height: 70px;"></h1>
+    </header>
+    <main>
+        <form id="ingredientForm">
+            <label for="ingredients">Enter ingredients you like (separated by commas):</label><br>
+            <input type="text" id="ingredients" name="ingredients" required><br>
+            <button type="submit">Generate Recipe</button>
+            <p id="validationMessage" style="color: rgb(143, 24, 24); display: none;">Please enter ingredients and select a recipe count.</p>
+        </form>    
+
+        <div id="recipeResults"></div> <!-- This div will display the generated recipes -->
+    </main>
+    
+    <script src="script.js"></script> <!-- Link to JavaScript file for functionality -->
+</body>
+</html>
